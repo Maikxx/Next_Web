@@ -1,0 +1,657 @@
+html, body {
+    min-height: 100%;
+}
+
+/*Algemeen*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    background-color: #3C5999;
+    color: #f6f6f6;
+    position: fixed;
+    clear: both;
+    z-index: 1000;
+    height: 60px;
+    border-bottom: 2px #333 solid;
+}
+
+footer {
+    clear: both;
+    color: #F6F6F6;
+    background-color: #2B2B2B;
+    text-align: center;
+    border-top: 2px solid #333;
+    width: 100%;
+    opacity: .8;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+footer a {
+    font-family: "Roboto", sans-serif;
+    color: #F6F6F6;
+}
+
+h1 {
+    font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 1.7em;
+    color: #333;
+    margin: 70px 0 10px;
+}
+
+.topbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    align-items: center;
+    text-align: center;
+    height: 50px;
+}
+
+.navitem {
+    display: block;
+    text-align: left;
+    flex: 1;
+    padding-left: 10px;
+    margin: 0;
+}
+
+#logo1 {
+    flex: 1;
+    background-size: contain;
+    background: url('../logo/logoPhone.svg') center no-repeat;
+    height: 50px;
+    width: 50px;
+}
+
+#myname {
+    text-align: right;
+    font-size: 1em;
+    flex: 1;
+    color: #F6F6F6;
+    padding-right: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+    min-height: 95vh;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #F6F6F6;
+}
+
+.topwrap, .bottomwrap {
+    margin: 0 auto;
+    align-items: center;
+    width: 90%;
+    padding-top: 10px;
+    border-bottom: 1px dashed #333;
+    padding-bottom: 10px;
+}
+
+.socialselector p {
+    color: #333;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.3em;
+    padding-bottom: 20px;
+}
+
+.socialcontainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/*Homepage Only*/
+
+.formelement p {
+    color: #333;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.3em;
+    padding-bottom: 20px;
+}
+
+form {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+input[type=week] {
+    width: 90%;
+    height: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px #333 solid;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: #3C5999;
+    font-family: Helvetica, sans-serif;
+    color: #F6F6F6;
+    border-radius: 10px;
+}
+
+input[type=submit] {
+    /*Check your time  styling*/
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-weight: bold;
+    background-color: #3C5999;
+    color: #F6F6F6;
+    padding: 2px 6px 2px 6px;
+    border: 1px solid #CCC;
+    border-right-color: #333;
+    border-bottom-color: #333;
+    border-radius: 10px;
+}
+
+.btn > img {
+    /*Instellingen voor homepage*/
+    height: 80px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+#btnControl1, #btnControl2, #btnControl3, #btnControl4, #btnControl5, #btnControl6, #btnControl7, #btnControl8, #btnControl9 {
+    /*Maakt button onzichtbaar*/
+    display: none;
+}
+
+#btnControl1:checked + .btn > img, #btnControl2:checked + .btn > img, #btnControl3:checked + .btn > img, #btnControl4:checked + .btn > img, #btnControl5:checked + .btn > img, #btnControl6:checked + .btn > img {
+    border: 3px solid #3C5999;
+    /*Geeft een border als men klikt*/
+}
+
+/*Instellingen Only*/
+
+input[type=text] {
+    /*Textarea styling*/
+    font-size: 1.1em;
+    font-weight: bold;
+    background-color: #3C5999;
+    color: #F6F6F6;
+    padding: 2px 6px 2px 6px;
+    border: 1px solid #CCC;
+    border-right-color: #333;
+    border-bottom-color: #333;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.row {
+    /*Instellingen voor social media rijen*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.sociallink img {
+    /*Maakt Icons klikbaar*/
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.paraset p {
+    /*Settings Paragraph*/
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+/*Factsheet only*/
+
+.conscol {
+    /*Maatregelwrapper*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto 20px;
+}
+
+.mtregel {
+    /*Blokje*/
+    flex: 1;
+}
+
+.mtregelblok {
+    /*Knopblok*/
+    font-size: 80%;
+    text-align: center;
+    font-weight: bold;
+    background-color: #3C5999;
+    color: #CCC;
+    padding: 2px 6px 2px 6px;
+    border: 1px solid #CCC;
+    border-right-color: #333;
+    border-bottom-color: #333;
+    height: 100%;
+    line-height: 100%;
+    border-radius: 10px;
+}
+
+.paramtr p {
+    /*Settings Paragraph*/
+    font-size: 16px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    text-align: center;
+    color: #333;
+}
+
+#btnControl7:checked + .btn > .mtregelblok,
+#btnControl8:checked + .btn > .mtregelblok, #btnControl9:checked + .btn > .mtregelblok {
+    border: 3px solid #DC143C;
+}
+
+.mtregelblok span {
+    /*Text in knop*/
+    padding-top: 5%;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    color: #f6f6f6;
+}
+
+.mtregelblok {
+    color: #F6F6F6;
+}
+
+.mtregelblok small {
+    /*Verwijderd Bold*/
+    font-weight: normal;
+    color: #F6F6F6;
+}
+
+.paraconfirm p {
+    /*Settings Paragraph*/
+    font-size: 16px;
+    margin: 10px auto 0;
+    text-align: center;
+    color: #333;
+}
+
+/*Overview Page*/
+
+.contentbox {
+    /*Div van dataopsomming*/
+    height: 60vh;
+    width: 90%;
+    margin: 0 auto 30px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+.blackrow, .whiterow {
+    /*Rijen.*/
+    flex: 1;
+    width: 100%;
+    background-color: #CCC;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+}
+
+.blackrow p, .whiterow p {
+    /*Maakt rijen en tekst.*/
+    color: #333;
+    font-size: 75%;
+    text-align: center;
+    padding: 2px;
+}
+
+.blackrow {
+    /*Afwisseling in table*/
+    background-color: #DBDDDE;
+}
+
+.pararev p {
+    /*Settings Paragraph*/
+    font-size: 16px;
+    margin: 0 auto;
+    width: 90%;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+/*Welkom Only*/
+
+.paraload p {
+    /*Settings Paragraph*/
+    font-size: 18px;
+    margin: 0 auto;
+    width: 90%;
+    padding-bottom: 5px;
+    padding-top: 40px;
+    text-align: center;
+    color: #333;
+}
+
+.welkomsttext h1 {
+    /*Tekstproperties Header*/
+    width: 80%;
+    padding-top: 50%;
+    margin: 0 auto;
+    font-size: 1.8em;
+    color: #333;
+}
+
+/*Informatie Only*/
+
+.informatiebox {
+    height: 780px;
+    background-color: #F6F6F6;
+    margin: 0 auto;
+    border: 2px solid #3C5999;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.informatiebox ul {
+    list-style-type: none;
+    padding-left: 0;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.informatiebox li {
+    margin: 0 auto;
+    flex: 1;
+    width: 80%;
+    font-size: 80%;
+    border-bottom: 1px solid #333;
+}
+
+li a {
+    text-decoration: underline;
+    color: #DC143C;
+}
+
+ul li:last-child {
+    border-bottom: 0;
+    text-align: center;
+}
+
+.informatiebox h3 {
+    text-align: center;
+}
+
+#voorwaarden {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*Einde Mobile / Tab*/
+
+@media (min-width: 1024px) {
+    /*Algemeen*/
+    h1 {
+        /*Veranderd Font Size H1's*/
+        font-size: 3em;
+    }
+
+    .topbar {
+        /*Veranderd Width Topbar*/
+        width: 100%;
+    }
+
+    #logo1 {
+        /*Gecentreerd Logo Desktop*/
+        background-image: url("../logo/LogoDesktop.svg");
+    }
+
+    #myname {
+        /*Gebruikersnaam Groter*/
+        font-size: 1.4em;
+    }
+
+    .topwrap, .bottomwrap {
+        /*Verwijderd border bottom.*/
+        border-bottom: 0;
+    }
+
+    .socialselector p {
+        /*Veranderd Lettertype grootte.*/
+        font-size: 1.4em;
+    }
+
+    /*Homepage Only*/
+    .formelement p {
+        /*Vergroot Fontsize*/
+        font-size: 1.4em;
+    }
+
+    input[type=week] {
+        /*Veranderd Styling*/
+        width: 60%;
+        height: 40px;
+        border: 2px solid #CCC;
+        border-right-color: #333;
+        border-bottom-color: #333;
+        font-size: 1.4em;
+        font-family: Helvetica, sans-serif;
+    }
+
+    /*Instellingen Only*/
+    input[type=text] {
+        /*Textarea styling*/
+        font-size: 1.2em;
+        font-weight: bold;
+        text-align: center;
+        padding: 2px 6px 2px 6px;
+        border: 2px solid #CCC;
+        border-right-color: #333;
+        border-bottom-color: #333;
+        width: 60%;
+    }
+
+    input[type=text]:focus {
+        /*Focusgrootte Veranderd*/
+        font-size: 1.3em;
+    }
+
+    .row {
+        /*Maakt Width kleiner*/
+        width: 60%;
+    }
+
+    .btn > img {
+        /*Maakt pointer van cursor.*/
+        cursor: pointer;
+    }
+
+    .sociallink img {
+        /*Maakt Icons klikbaar*/
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    .paraset p {
+        /*Settings Paragraph*/
+        font-size: 1.4em;
+    }
+
+    /*Factsheet only*/
+    .conscol {
+        /*Veranderd Maatregelknoppen Container*/
+        height: 70px;
+        width: 60%;
+        font-size: 1.4em;
+    }
+
+    .mtregelblok {
+        /*Veranderd Knoppen zelf*/
+        padding: 2px 6px 2px 6px;
+        border: 2px solid #CCC;
+        border-right-color: #333;
+        border-bottom-color: #333;
+        margin-left: 10px;
+        margin-right: 10px;
+        color: #F6F6F6;
+        cursor: pointer;
+    }
+
+    .paramtr p {
+        /*Vergroot Size*/
+        font-size: 1.3em;
+    }
+
+    .paraconfirm p {
+        /*Settings Paragraph*/
+        font-size: 1.3em;
+    }
+
+    /*Overview Page*/
+    .contentbox {
+        /*Div van dataopsomming*/
+        height: 70vh;
+        width: 85%;
+        margin: 0 auto 30px;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid #333;
+        border-radius: 10px;
+    }
+
+    .blackrow, .whiterow {
+        /*Rijen.*/
+        flex: 1;
+        width: 100%;
+        background-color: #f6F6F6;
+        border-top: 2px solid #333;
+        border-bottom: 2px solid #333;
+    }
+
+    .blackrow p, .whiterow p {
+        /*Maakt rijen en tekst.*/
+        color: #333;
+        font-size: 1.2em;
+        text-align: center;
+        padding: 2px;
+    }
+
+    .blackrow {
+        /*Afwisseling in table*/
+        background-color: #DBDDDE;
+    }
+
+    .pararev p {
+        /*Settings Paragraph*/
+        font-size: 1.4em;
+    }
+
+    /*Welkom Only*/
+    .paraload p {
+        /*Settings Paragraph*/
+        font-size: 1.4em;
+        margin: 0 auto;
+        width: 90%;
+        padding-bottom: 5%;
+        padding-top: 5%;
+        text-align: center;
+        color: #333;
+    }
+
+    .welkomsttext h1 {
+        /*Tekstproperties Header*/
+        font-size: 3em;
+        padding-top: 10%;
+    }
+
+    /*Buttons*/
+    .infolink, .viewlink, .maatlinks, .setlink, .homelink, .welkomlink.one, .welkomlink.two {
+        /*Breedte van de buttons*/
+        margin: 0 auto;
+        width: 40%;
+    }
+
+    .infolink form, .viewlink form, .maatlinks form, .setlink form, .homelink form, .welkomlink.one form, .welkomlink.two form {
+        /*Maakt form's 40% width*/
+        width: 100%;
+    }
+
+    .infolink input[type=submit], .viewlink input[type=submit], .maatlinks input[type=submit], .setlink input[type=submit], .homelink input[type=submit], .welkomlink.one input[type=submit], .welkomlink.two input[type=submit] {
+        /*Klikbare buttons*/
+        width: 100%;
+        height: 60px;
+        font-size: 1.7em;
+        -webkit-transition-duration: 400ms;
+        transition-duration: 400ms;
+        border: 3px solid #CCC;
+        border-right-color: #333;
+        border-bottom-color: #333;
+        cursor: pointer;
+    }
+
+    .infolink:hover input[type=submit], .viewlink:hover input[type=submit], .maatlinks:hover input[type=submit], .setlink:hover input[type=submit], .homelink:hover input[type=submit], .welkomlink.one:hover input[type=submit], .welkomlink.two:hover input[type=submit] {
+        /*Hoverprops Knop*/
+        -webkit-transition-duration: 400ms;
+        transition-duration: 400ms;
+        color: #ACACAC;
+        border-radius: 30px;
+    }
+
+    /*Informatie Only*/
+    .informatiebox {
+        /*Grotere Box*/
+        height: 790px;
+    }
+
+    .informatiebox ul {
+        /*Veranderd hoogte van de UL*/
+        height: 100%;
+    }
+
+    .informatiebox li {
+        /*Groter Font*/
+        font-size: 1.2em;
+    }
+
+    ul li:last-child {
+        /*Groter Font*/
+        font-size: 1.4em;
+    }
+
+    .informatiebox h3 {
+        /*Groter Font en ander font*/
+        font-size: 1.6em;
+        font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+    }
+
+    #voorwaarden {
+        /*Groter Font*/
+        font-size: 1.4em;
+    }
+}
+
+/*Einde Desktop*/

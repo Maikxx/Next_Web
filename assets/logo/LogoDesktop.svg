@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 20.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 990.5 583" style="enable-background:new 0 0 990.5 583;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#3C5999;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st1{fill:#DC143C;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st2{fill:none;}
+	.st3{fill:#FFFFFF;}
+	.st4{font-family:'Ailerons-Regular';}
+	.st5{font-size:320px;}
+	.st6{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st7{fill:#DC143C;}
+	.st8{font-size:400px;}
+	.st9{fill:#2B2B2B;}
+	.st10{font-size:49.5936px;}
+</style>
+<g id="Background">
+	<rect y="0" class="st0" width="990.5" height="583"/>
+</g>
+<g id="Web">
+	<g id="Bord">
+		<g>
+			<polygon class="st1" points="440.7,251.9 375.1,186.3 375.1,93.5 440.7,27.9 533.5,27.9 599.1,93.5 599.1,186.3 533.5,251.9 			
+				"/>
+		</g>
+		<g>
+			<polygon class="st0" points="455.8,215.6 411.4,171.2 411.4,108.6 455.8,64.2 518.4,64.2 562.8,108.6 562.8,171.2 518.4,215.6 
+							"/>
+		</g>
+	</g>
+	<rect x="-0.9" y="16.5" class="st2" width="419" height="246.8"/>
+	<text transform="matrix(1 0 0 1 24.6329 240.4857)" class="st3 st4 st5">BL</text>
+	<text transform="matrix(1 0 0 1 24.6329 240.4857)" class="st6 st4 st5">BL</text>
+	<rect x="556.1" y="16.5" class="st2" width="419" height="246.8"/>
+	<text transform="matrix(1 0 0 1 573.5732 240.4857)" class="st3 st4 st5">CK</text>
+	<text transform="matrix(1 0 0 1 573.5732 240.4857)" class="st6 st4 st5">CK</text>
+	<rect x="45.8" y="273.6" class="st2" width="325.7" height="338"/>
+	<text transform="matrix(1 0 0 1 88.632 553.5573)" class="st7 st4 st8">S</text>
+	<text transform="matrix(1 0 0 1 88.632 553.5573)" class="st9 st4 st8">S</text>
+	<rect x="506.1" y="273.6" class="st2" width="251.1" height="292.4"/>
+	<text transform="matrix(1 0 0 1 506.1002 553.5569)" class="st9 st4 st8">M</text>
+	<rect x="659.6" y="337.1" class="st2" width="212" height="228.8"/>
+	<text transform="matrix(1 0 0 1 669.5717 555.5005)" class="st3 st4 st5">E</text>
+	<text transform="matrix(1 0 0 1 669.5717 555.5005)" class="st6 st4 st5">E</text>
+</g>
+<g id="Bord_2_">
+	<g>
+		<polygon class="st9" points="356,555.5 290,481.2 290,376.2 356,301.9 449.4,301.9 515.4,376.2 515.4,481.2 449.4,555.5 		"/>
+	</g>
+	<g>
+		<polygon class="st1" points="371.2,514.4 326.5,464.1 326.5,393.3 371.2,343 434.2,343 478.9,393.3 478.9,464.1 434.2,514.4 		"/>
+	</g>
+</g>
+<rect x="343.9" y="412.3" class="st2" width="125.6" height="44.5"/>
+<text transform="matrix(1 0 0 1 343.9062 447.0648)" class="st3 st4 st10">STOP</text>
+</svg>
